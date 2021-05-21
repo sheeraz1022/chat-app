@@ -6,7 +6,7 @@ import { Container, Col, Row, FormInput, Button } from 'shards-react';
 
 const link = new WebSocketLink({
   // uri: 'ws://localhost:4000/',
-  uri: 'ws://sheeraz-chat-server.herokuapp.com/',
+  uri: 'wss://sheeraz-chat-server.herokuapp.com/',
   options: {
     reconnect: true
   }
