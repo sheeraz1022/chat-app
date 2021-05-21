@@ -5,14 +5,16 @@ import { ApolloClient, InMemoryCache, ApolloProvider, useSubscription, gql, useM
 import { Container, Col, Row, FormInput, Button } from 'shards-react';
 
 const link = new WebSocketLink({
-  uri: 'ws://localhost:4000/',
+  // uri: 'ws://localhost:4000/',
+  uri: 'ws://sheeraz-chat-server.herokuapp.com/',
   options: {
     reconnect: true
   }
 });
 const client = new ApolloClient({
   link,
-  uri: 'http://localhost:4000',
+  // uri: 'http://localhost:4000',
+  uri: 'https://sheeraz-chat-server.herokuapp.com/',
   cache: new InMemoryCache()
 });
 
